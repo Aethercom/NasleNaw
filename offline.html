@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#17456b">
+    <meta name="color-scheme" content="light">
+    <title>عدم اتصال به اینترنت | لیسه عالی نسل نو</title>
+    <style>
+        :root {
+            --navy: #08203a;
+            --blue: #17456b;
+            --green: #176b57;
+            --green-dark: #0f4639;
+            --mint: #b9dfce;
+            --soft: #e1eee8;
+        }
+        * { box-sizing: border-box; }
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background:
+                radial-gradient(ellipse at 15% 15%, rgba(185,223,206,.34), transparent 34%),
+                radial-gradient(ellipse at 90% 85%, rgba(23,69,107,.07), transparent 32%),
+                #fff;
+            color: #111b2c;
+            font-family: Estedad, Tahoma, Arial, sans-serif;
+        }
+        .offline-card {
+            width: min(100%, 680px);
+            padding: clamp(30px, 7vw, 64px) 24px;
+            text-align: center;
+            background: rgba(255,255,255,.9);
+            border: 1px solid rgba(23,107,87,.14);
+            border-radius: 24px;
+            box-shadow: 0 24px 70px rgba(8,32,58,.07);
+        }
+        .offline-icon {
+            width: 66px;
+            height: 66px;
+            margin: 0 auto 22px;
+            display: grid;
+            place-items: center;
+            color: var(--green);
+            background: var(--soft);
+            border: 1px solid rgba(23,107,87,.13);
+            border-radius: 20px;
+        }
+        .offline-icon svg {
+            width: 31px;
+            height: 31px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 1.7;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        h1 {
+            margin: 0 0 12px;
+            color: var(--navy);
+            font-size: clamp(23px, 4vw, 31px);
+            line-height: 1.7;
+        }
+        p {
+            max-width: 490px;
+            margin: 0 auto;
+            color: #596675;
+            font-size: 15px;
+            line-height: 2.2;
+        }
+        .actions {
+            margin-top: 28px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        a, button {
+            min-height: 47px;
+            padding: 0 23px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            font: inherit;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform .2s ease, background .2s ease;
+        }
+        a:hover, button:hover { transform: translateY(-2px); }
+        .primary {
+            color: #fff;
+            background: var(--green);
+        }
+        .primary:hover { background: var(--green-dark); }
+        .secondary {
+            color: var(--green);
+            background: #fff;
+            border-color: rgba(23,107,87,.2);
+        }
+        .secondary:hover { background: var(--soft); }
+        footer {
+            margin-top: 28px;
+            color: #75818d;
+            text-align: center;
+            font-size: 12px;
+        }
+        footer strong { color: var(--green); }
+        @media (max-width: 520px) {
+            body { padding: 16px; }
+            .offline-card { border-radius: 19px; }
+            .actions { flex-direction: column; }
+            .actions > * { width: min(100%, 260px); margin-inline: auto; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { transition-duration: .01ms !important; }
+        }
+    </style>
+</head>
+<body>
+    <main class="offline-card">
+        <div class="offline-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+                <path d="M2 8.8a15.5 15.5 0 0 1 20 0M5.5 12.3a10.2 10.2 0 0 1 13 0M9 15.8a4.8 4.8 0 0 1 6 0M12 20h.01"/>
+                <path d="m3 3 18 18"/>
+            </svg>
+        </div>
+        <h1>اتصال به اینترنت برقرار نیست</h1>
+        <p>
+            در حال حاضر امکان برقراری ارتباط با وب‌سایت وجود ندارد.
+            اتصال اینترنت خود را بررسی کنید؛ اگر قبلاً از این صفحه بازدید کرده باشید،
+            ممکن است نسخه ذخیره‌شده بعضی از بخش‌های سایت همچنان در دسترس باشد.
+        </p>
+        <div class="actions">
+            <button class="primary" type="button" onclick="window.location.reload()">تلاش دوباره</button>
+            <a class="secondary" href="./index.html">رفتن به صفحه اصلی</a>
+        </div>
+    </main>
+    <footer>© ۱۴۰۵ <strong>لیسه عالی نسل نو</strong> | دانش، فرهنگ، آینده</footer>
+</body>
+</html>

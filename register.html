@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17456b">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="شرایط پذیرش و فرم درخواست ثبت‌نام شاگردان جدید در لیسه عالی نسل نو.">
+  <title>ثبت‌نام آنلاین | لیسه عالی نسل نو</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="./favicon.png" rel="icon" type="image/png" sizes="512x512">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Estedad:wght@100..900&family=Questrial&display=swap" rel="stylesheet">
+</head>
+<body class="admission-page">
+        <header>
+            <a href="index.html" class="brand" aria-label="صفحه اصلی">
+                <img src="assets/icon/لوگو-مکتب.avif" alt="Nasle Naw Logo">
+                <span class="khandevane">لیسه عالی نسل نو</span>
+            </a>
+            <nav class="nav" id="site-navigation" aria-label="منوی اصلی">
+                <!-- <a href="index.html" class="nav-link active">
+                    صفحه اصلی
+                </a> -->
+                <a href="student-panel.html" class="nav-link">
+                    پنل شاگردان
+                </a>
+                <a href="teacher-panel.html" class="nav-link">
+                    پنل اساتید
+                </a>
+                <a href="index.html#news" class="nav-link">
+                    اطلاعیه ها و اخبار
+                </a>
+                <a href="index.html#gallery" class="nav-link">
+                    گالری تصاویر
+                </a>
+                <a href="index.html#contact" class="nav-link">
+                    تماس با ما
+                </a>
+                <a href="index.html#about" class="nav-link">
+                    درباره ما
+                </a>
+                <a href="index.html#Sabte-Naam" class="nav-link nav-sabtenaam">
+                    ثبت نام
+                </a>
+            </nav>
+            <button
+                class="menu-key"
+                id="menu-toggle"
+                type="button"
+                aria-label="باز کردن منو"
+                aria-controls="site-navigation"
+                aria-expanded="false"
+            >
+                <svg
+                    class="menu-icon"
+                    viewBox="0 0 24 24"
+                    width="26"
+                    height="26"
+                    aria-hidden="true"
+                >
+                    <path class="menu-line line-top" d="M4 6H20"/>
+                    <path class="menu-line line-middle" d="M4 12H20"/>
+                    <path class="menu-line line-bottom" d="M4 18H20"/>
+                </svg>
+            </button>
+        </header>
+
+  <main id="main-content">
+    <section class="admission-hero">
+      <div class="admission-wrap">
+        <span class="admission-kicker">پذیرش شاگردان جدیدالشمول</span>
+        <h1>درخواست ثبت‌نام آنلاین</h1>
+        <p>والدین گرامی، پیش از تکمیل فرم، شرایط پذیرش لیسه عالی نسل نو را با دقت مطالعه کنید. اطلاعات این فرم باید درست و مطابق اسناد رسمی شاگرد باشد.</p>
+        <div class="admission-steps">
+          <span>1. مطالعه شرایط و فیس</span><span>2. تکمیل اطلاعات شاگرد</span><span>3. تأیید ولی و مراجعه به اداره</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="admission-wrap admission-layout">
+      <form class="admission-card" id="admissionForm">
+        <section class="admission-section">
+          <div class="section-heading"><span class="section-number">1</span><div><h2>اطلاعات شاگرد</h2><p>اطلاعات هویتی و تحصیلی دانش‌آموز</p></div></div>
+          <div class="form-grid">
+            <div class="field"><label for="firstName">نام <b class="required">*</b></label><input id="firstName" name="firstName" required></div>
+            <div class="field"><label for="lastName">تخلص <b class="required">*</b></label><input id="lastName" name="lastName" required></div>
+            <div class="field"><label for="fatherName">نام پدر <b class="required">*</b></label><input id="fatherName" name="fatherName" required></div>
+            <div class="field"><label for="grandfatherName">نام پدرکلان</label><input id="grandfatherName" name="grandfatherName"></div>
+            <div class="field"><label for="age">سن فعلی شاگرد <b class="required">*</b></label><input id="age" name="age" type="number" min="3" max="30" required></div>
+            <div class="field"><label for="grade">صنف مورد درخواست <b class="required">*</b></label>
+              <select id="grade" name="grade" required>
+                <option value="">انتخاب صنف</option>
+                <option>آمادگی</option><option>اول</option><option>دوم</option><option>سوم</option><option>چهارم</option><option>پنجم</option><option>ششم</option><option>هفتم</option><option>هشتم</option><option>نهم</option><option>دهم</option><option>یازدهم</option><option>دوازدهم</option>
+              </select>
+            </div>
+            <div class="field"><label for="province">ولایت اصلی</label><input id="province" name="province"></div>
+            <div class="field"><label for="district">ولسوالی</label><input id="district" name="district"></div>
+            <div class="field"><label for="village">قریه</label><input id="village" name="village"></div>
+            <div class="field"><label for="currentArea">باشنده فعلی / ناحیه</label><input id="currentArea" name="currentArea"></div>
+            <div class="field"><label for="street">کوچه</label><input id="street" name="street"></div>
+            <div class="field"><label for="tazkira">نمبر تذکره برقی</label><input id="tazkira" name="tazkira"></div>
+            <div class="field full"><label for="disability">معیوبیت جسمی (در صورت موجودیت)</label><input id="disability" name="disability" placeholder="در صورت عدم موجودیت، خالی بگذارید"></div>
+          </div>
+        </section>
+
+        <section class="admission-section">
+          <div class="section-heading"><span class="section-number">2</span><div><h2>اطلاعات خانواده</h2><p>جزئیات روابط خانوادگی درج‌شده در فرم پذیرش</p></div></div>
+          <div class="form-grid">
+            <div class="field"><label for="fatherJob">وظیفه پدر</label><input id="fatherJob" name="fatherJob"></div>
+            <div class="field"><label for="brothers">تعداد برادر</label><input id="brothers" name="brothers" type="number" min="0"></div>
+            <div class="field"><label for="uncle">کاکا</label><input id="uncle" name="uncle"></div>
+            <div class="field"><label for="cousinPaternal">پسر کاکا</label><input id="cousinPaternal" name="cousinPaternal"></div>
+            <div class="field"><label for="maternalUncle">ماما</label><input id="maternalUncle" name="maternalUncle"></div>
+            <div class="field"><label for="cousinMaternal">پسر ماما</label><input id="cousinMaternal" name="cousinMaternal"></div>
+          </div>
+        </section>
+
+        <section class="admission-section">
+          <div class="section-heading"><span class="section-number">3</span><div><h2>راه‌های تماس و اسناد</h2><p>شماره‌های تماس ولی دانش‌آموز و مدارک مورد نیاز</p></div></div>
+          <div class="form-grid">
+            <div class="field"><label for="guardian">نام ولی دانش‌آموز <b class="required">*</b></label><input id="guardian" name="guardian" required></div>
+            <div class="field"><label for="phone">شماره تماس <b class="required">*</b></label><input id="phone" name="phone" type="tel" required></div>
+            <div class="field"><label for="whatsapp">شماره واتساپ</label><input id="whatsapp" name="whatsapp" type="tel"></div>
+            <div class="field"><label for="relation">نسبت ولی با شاگرد</label><select id="relation" name="relation"><option value="">انتخاب کنید</option><option>پدر</option><option>مادر</option><option>برادر</option><option>کاکا</option><option>سایر</option></select></div>
+            <div class="field"><label for="idCopy">کاپی تذکره برقی</label><input id="idCopy" name="idCopy" type="file" accept="image/*,.pdf"><small>در زمان ثبت‌نام حضوری ارائه شود.</small></div>
+            <div class="field"><label for="photos">چهار قطعه عکس جدید</label><input id="photos" name="photos" type="file" accept="image/*" multiple><small>الزام ارائه چهار قطعه عکس جدید در سند پذیرش ذکر شده است.</small></div>
+          </div>
+        </section>
+
+        <section class="admission-section">
+          <div class="section-heading"><span class="section-number">4</span><div><h2>شرایط پذیرش و مقررات مکتب</h2><p>مطالعه این موارد پیش از تأیید فرم ضروری است</p></div></div>
+          <div class="condition-intro">قابل توجه والدین عزیز! قبل از ثبت‌نام فرزند دلبندتان، شرایط این لیسه را با دقت کامل بخوانید تا بعد از ثبت‌نام دچار مشکل نشوید.</div>
+          <ol class="conditions">
+            <li>شاگردان این لیسه مکلف‌اند با یونیفرم تعیین‌شده از طرف اداره لیسه وارد مکتب گردند. داشتن کارت هویت حتمی می‌باشد.</li>
+            <li>داشتن لوازم مکمل درسی حتمی و ضروری است.</li>
+            <li>غیرحاضری شاگرد بدون هماهنگی قبلی فامیل با اداره لیسه قابل قبول نمی‌باشد.</li>
+            <li>از آوردن وسایل و لوازم غیر درسی در محیط مکتب جداً خودداری گردد. در صورت مشاهده، وسایل متذکره تا ختم سال تعلیمی قید می‌گردد. همچنان از آوردن رفیق و مهمان در مکتب خودداری صورت گیرد.</li>
+            <li>مسؤولیت رفت‌وآمد شاگردان به عهده والدین عزیز بوده و اداره لیسه قبل از ورود شاگرد به مکتب و بعد از خروج از مکتب هیچ‌گونه مسؤولیتی را در قبال شاگرد نمی‌پذیرد.</li>
+            <li>به هیچ وجه به شاگردان اجازه خارج‌شدن از مکتب در ساعت رسمی داده نمی‌شود؛ مگر با مراجعه و درخواست خود والدین دانش‌آموز.</li>
+            <li>فیس سال تعلیمی به‌صورت ۹ ماه بوده و بدون در نظر داشت رخصتی‌های وسط سال و آخر سال باید فیس تحویل داده شود.</li>
+            <li>فیس ماهوار صنف‌ها مطابق جدول زیر تعیین گردیده است.</li>
+            <li>فیس داخله برای شاگردان جدیدالشمول 500 افغانی است و به هیچ وجه دوباره مسترد نمی‌گردد.</li>
+            <li>والدین عزیز مسؤولیت دارند هر ۱۵ روز یک‌بار به مکتب مراجعه نموده تا از پیشرفت و نواقص درسی فرزندان‌شان آگاهی حاصل نمایند. اگر شاگرد توان پیش‌برد صنف مربوط را نداشت، در قسمت حل مشکلات آن تصمیم بعدی در نظر گرفته شود.</li>
+            <li>والدین گرامی مسؤولیت دارند در قسمت تأمین نظافت بدن و لباس فرزندشان در خانه توجه جدی نمایند.</li>
+            <li>داشتن کاپی تذکره برقی و چهار قطعه عکس جدید هنگام ثبت‌نام دانش‌آموز در مکتب الزامی می‌باشد.</li>
+          </ol>
+          <table class="fee-table">
+            <thead><tr><th>صنف</th><th>فیس ماهوار</th></tr></thead>
+            <tbody>
+              <tr><td>آمادگی الی صنف سوم</td><td>600 افغانی</td></tr>
+              <tr><td>صنف چهارم الی ششم</td><td>700 افغانی</td></tr>
+              <tr><td>صنف هفتم الی نهم</td><td>800 افغانی</td></tr>
+              <tr><td>صنف دهم الی دوازدهم</td><td>900 افغانی</td></tr>
+            </tbody>
+          </table>
+          <p class="fee-note">فیس سال تعلیمی برای ۹ ماه محاسبه می‌شود. فیس داخله شاگردان جدیدالشمول 500 افغانی بوده و قابل استرداد نیست.</p>
+        </section>
+
+        <section class="admission-section">
+          <div class="section-heading"><span class="section-number">5</span><div><h2>تأیید ولی دانش‌آموز</h2><p>تأیید درستی اطلاعات و پابندی به مقررات مکتب</p></div></div>
+          <div class="field" style="margin-bottom:16px"><label for="guardianConfirm">نام کامل ولی ارجمند <b class="required">*</b></label><input id="guardianConfirm" name="guardianConfirm" required></div>
+          <label class="agree-box"><input type="checkbox" id="agreement" required><span>اینجانب، ولی ارجمند دانش‌آموز، با تمام قوانین و مقررات لیسه پابند بوده و تأیید می‌کنم اطلاعاتی که ارائه کرده‌ام درست می‌باشد. <b class="required">*</b></span></label>
+          <div class="form-actions">
+            <button class="ad-btn ad-btn-primary" type="submit">بررسی اطلاعات و چاپ فرم</button>
+            <button class="ad-btn ad-btn-light" type="reset">پاک‌کردن فرم</button>
+          </div>
+          <div class="form-status" id="formStatus" role="status"></div>
+        </section>
+      </form>
+
+      <aside class="admission-side">
+        <h3>راهنمای ثبت‌نام</h3>
+        <ul>
+          <li>تمام اطلاعات را مطابق تذکره و اسناد شاگرد وارد کنید.</li>
+          <li>فیلدهای دارای علامت ستاره الزامی‌اند.</li>
+          <li>کاپی تذکره برقی و چهار قطعه عکس جدید را برای ثبت‌نام حضوری آماده کنید.</li>
+        </ul>
+        <a class="side-link" href="index.html">بازگشت به صفحه اصلی ←</a>
+      </aside>
+    </div>
+  </main>
+        <footer>
+            <div class="footer">
+<!--====================================
+        Nasle Naw
+    ====================================-->
+                <div class="logo-intro">
+                    <img src="assets/icon/لوگو-مکتب.avif" class="logo-intro-img">
+                    <h2 class="khandevane">لیسه عالی نسل نو</h2>
+                    <p class="khandevane">دانش | فرهنگ | آینده</p>
+                    <div class="social-icon">
+                        <a href="https://facebook.com/" target="_blank" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--! Font Awesome Pro 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z"/></svg>
+                        </a>
+                        <a href="https://wa.me/0764003685" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M380.9 97.1c-41.9-42-97.7-65.1-157-65.1-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480 117.7 449.1c32.4 17.7 68.9 27 106.1 27l.1 0c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zM325.1 300.5c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z"/>
+                            </svg>
+                        </a>
+                        <a href="tel:0764003685" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--! Font Awesome Pro 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M176.8 74.9C204.1 65.8 233.8 78.8 245.7 104.9L285.4 192.2C296 215.6 289.4 243.2 269.4 259.3L245.2 278.6C270.7 328.6 310.7 370 359.6 397.4L380.8 370.8C396.9 350.7 424.5 344.1 447.9 354.8L535.2 394.5C561.4 406.4 574.3 436.1 565.2 463.4C544.5 525.7 481.5 579.6 404.3 566C230.6 535.4 104.7 409.5 74.1 235.8C60.5 158.6 114.5 95.7 176.7 74.9zM202 124.8C200.3 121 196 119.1 192 120.4C146.8 135.5 112.9 179 121.5 227.4C148.6 381.2 258.9 491.6 412.7 518.7C461.1 527.2 504.6 493.4 519.7 448.2C521 444.2 519.1 439.9 515.3 438.2L428 398.4C424.6 396.9 420.6 397.8 418.3 400.7L384.8 442.6C377.8 451.3 365.8 454.1 355.8 449.3C283.3 414.9 225.3 355 193.4 281.1C189.1 271.2 192 259.6 200.4 252.9L239.3 221.8C242.2 219.5 243.2 215.5 241.6 212.1L201.9 124.7z"/></svg>
+                        </a>
+                    </div>
+                </div>
+<!--    =============================
+            Address
+        ============================-->
+                <div class="services-footer">
+                    <div class="maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d841511.0330472252!2d69.1339264!3d34.5243648!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d167da60430abd%3A0x133870f7a32bacc6!2z2YXaqdiq2Kgg2K7YtdmI2LXbjCDZhtiz2YQg2YbZiA!5e0!3m2!1sfa!2s!4v1794548602564!5m2!1sfa!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <path fill="currentColor" d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z"/>
+                        </svg>
+                    آدرس: کابل, آخر شهرک امید سبز, زیر پروژه جدید, کوچه مصلی ولیعصر <sup>(عج)</sup>
+                    </p>
+                </div>
+                <div class="nav-explore">
+                    <div class="links-footer">
+                        <h3 class="khandevane">نسل نو و شما</h3>
+                        <a href="register.html" class="normal-link">ثبت نام</a>
+                        <a href="index.html#faq" class="normal-link">سوالات متداول</a>
+                        <a href="index.html#contact" class="normal-link">تماس با اداره</a>
+                        <a href="job.html" class="normal-link">استخدام معلمین</a>
+                        <a href="index.html#about" class="normal-link">درباره مکتب</a>
+                    </div>
+                    <div class="links-footer">
+                        <h3 class="khandevane">تحصیلی</h3>
+                        <a href="index.html" class="normal-link">صفحه اصلی</a>
+                        <a href="teacher-panel.html" class="normal-link">پنل استادان</a>
+                        <a href="index.html#winter" class="normal-link">برنامه زمستانی</a>
+                        <a href="index.html#programs" class="normal-link">برنامه آموزشی</a>
+                        <a href="index.html#contact" class="normal-link">پرسش از معلم</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© ۱۴۰۵ لیسه عالی نسل نو. تمامی حقوق محفوظ است.</p>
+                <span>Designed by <a href="https://Aethercom.github.io" target="_blank">Aethercom</a></span>
+            </div>
+        </footer>
+</body>
+</html>

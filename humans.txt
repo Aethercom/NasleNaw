@@ -1,0 +1,11 @@
+/* TEAM */
+Project: Nasle Naw
+Developer: Aethercom
+Design: Aethercom
+Content: Nasle Naw High-School
+
+/* SITE */
+Language: Persian (Dari)
+Standards: HTML5, CSS3, JavaScript
+Hosting: GitHub Pages
+Last Update: 2026-11-17

@@ -1,0 +1,16 @@
+{
+    "name": "مکتب نسل نو",
+    "short_name": "نسل نو",
+    "description": "وب‌سایت رسمی لیسه عالی نسل نو",
+    "start_url": "NasleNaw/",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#b9dfce",
+    "icons": [
+        {
+            "src": "NasleNaw/favicon.ico",
+            "sizes": "240x240",
+            "type": "image/png"
+        }
+    ]
+}
