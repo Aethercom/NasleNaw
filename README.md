@@ -20,7 +20,7 @@ official website of nasle naw high-school
 - JavaScript
 
 ## Website
-https://naslenaw.github.io
+https://aethercom.github.io/naslenaw
 
 ## Developer
 - Aethercom
